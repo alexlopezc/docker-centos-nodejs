@@ -9,7 +9,7 @@ $ node app.js
 
 Intended to be executed from a directory with an app.js file with the following command:
 
-$ docker run –privileged=true -it -p 3000:3000 -v $(pwd):/var/www thompsa6/docker-centos-nodejs
+$ docker run -–privileged=true -it -p 3000:3000 -v $(pwd):/var/www thompsa6/docker-centos-nodejs
 
 Notes:
 
