@@ -1,16 +1,13 @@
-# docker-centos-nodejs
-Dockerfile for building a container for local nodejs-based api development.
+# Docker Centos 7 NodejS and Electron
+Dockerfile for building a container for local electronjs development in CentOS
 
-The container has Node, npm, grunt-cli, and bower installed that automatically runs the following commands:
+The container has Node, npm and electron quick start guide
 
-$ npm install
+$ npm star
 
 $ node app.js
 
-Intended to be executed from a directory with an app.js file with the following command:
+Intended to be executed from a directory with a src dorectory with the quick start guide from electron
 
-$ docker run -–privileged=true -it -p 3000:3000 -v $(pwd):/var/www thompsa6/docker-centos-nodejs
+$ docker run -it thompsa6/docker-centos-nodejs /bin/bash
 
-Notes:
-
-Will be visible on the docker host port 3000 (for MacOS, use 'boot2docker ip')
